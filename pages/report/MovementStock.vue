@@ -188,7 +188,7 @@ const calculateCustomerTotal = (name) => {
                             <Calendar v-model="filterModel.value" dateFormat="mm/dd/yy" placeholder="mm/dd/yyyy" mask="99/99/9999" />
                         </template>
                     </Column>
-                    <Column field="name" header="TOTAL IN (+)" style="min-width: 12rem">
+                    <Column field="name" header="IN (+)" style="min-width: 12rem">
                         <template #body="{ data }">
                             {{ data.in }}
                         </template>
@@ -196,7 +196,7 @@ const calculateCustomerTotal = (name) => {
                             <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
                         </template>
                     </Column>
-                    <Column field="name" header="TOTAL OUT (-)" style="min-width: 12rem">
+                    <Column field="name" header="OUT (-)" style="min-width: 12rem">
                         <template #body="{ data }">
                             {{ data.out }}
                         </template>
